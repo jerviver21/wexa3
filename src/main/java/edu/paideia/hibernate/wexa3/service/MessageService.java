@@ -24,7 +24,7 @@ public class MessageService {
 	public Collection<Message> findAll(){
 
 		Message m1 = new Message();
-		m1.setText("Mensaje5");
+		m1.setText("Mensaje6");
 		em.getCurrentSession().persist(m1);
 		List<Message> messages = em.getCurrentSession().createQuery("SELECT m FROM Message m").list();
 		return Lists.newArrayList(messages);
